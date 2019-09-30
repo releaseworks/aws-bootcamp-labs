@@ -1,4 +1,5 @@
 # CloudFormation
+The objective of this lab is to create an RDS instance, and connect to it.
 
 ## Readme
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-database-instance.html
