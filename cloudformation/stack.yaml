@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: AWS Bootcamp RDS lab
+Parameters:
+  # The name of this component, used in various resource names
+  ServiceName:
+    Type: String
+    Default: 'my-rds'
+  # Subnets
+  VPCId:
+    Type: String
+    Default: ''
+  SubnetA:
+    Type: String
+    Default: ''
+  SubnetB:
+    Type: String
+    Default: ''
+  SubnetC:
+    Type: String
+    Default: ''
+  # CIDR to allow access from
+  IngressCIDR:
+    Type: String
+    Default: '0.0.0.0/0'
+
+Resources:
+  # Add resources here
