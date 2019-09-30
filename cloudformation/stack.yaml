@@ -1,10 +1,10 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: AWS Bootcamp RDS lab
 Parameters:
-  # The name of this component, used in various resource names
-  ServiceName:
+  # Name of the database
+  DatabaseName:
     Type: String
-    Default: 'my-rds'
+    Default: 'mydb'
   # Subnets
   VPCId:
     Type: String
@@ -15,9 +15,7 @@ Parameters:
   SubnetB:
     Type: String
     Default: ''
-  SubnetC:
-    Type: String
-    Default: ''
+
   # CIDR to allow access from
   IngressCIDR:
     Type: String
